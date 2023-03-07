@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Fotos</title>
+    <script>
+        function mudafoto(foto) {
+            document.getElementById("icone").src = foto;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está Chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="../Images/fotos.png" alt="img_oculos">
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudafoto('../Images/home.png')"
+                        onmouseout="mudafoto('../Images/fotos.png')"><a href="../index.html">Inicio</a>
+                    </li>
+                    <li onmouseover="mudafoto('../Images/especificacoes.png')"
+                        onmouseout="mudafoto('../Images/fotos.png')"><a
+                            href="../Pages/especificacoes.html">Especificação</a></li>
+                    <li onmouseover="mudafoto('../Images/fotos.png')"
+                        onmouseout="mudafoto('../Images/fotos.png')"><a
+                            href="../Pages/fotos.html">Fotos</a></li>
+                    <li onmouseover="mudafoto('../Images/multimidia.png')"
+                        onmouseout="mudafoto('../Images/fotos.png')"><a
+                            href="../Pages/multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudafoto('../Images/contato.png')"
+                        onmouseout="mudafoto('../Images/fotos.png')"><a
+                            href="../Pages/faleconosco.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <footer id="rodape">
+            <h4>Copyright &copy; 2023 tlxdev All Rights Reserved.</h4>
+            <a href="https://www.instagram.com/lucastlx" target="_blank">Fale com o desenvolvedor</a>
+        </footer>
+    </div>
+</body>
